@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-productsway",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/index.js",
   "author": "Huynh Duc Dung",
   "license": "MIT",
