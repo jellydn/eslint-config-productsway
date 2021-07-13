@@ -18,7 +18,7 @@ Create a .eslintrc.js file in the root of your project's directory
 
 ```sh
 module.exports = {
-  extends: ['airbnb-typescript-prettier'],
+  extends: ['productsway'],
 };
 ```
 
@@ -26,7 +26,7 @@ module.exports = {
 
 ```sh
 module.exports = {
-  extends: ['airbnb-typescript-prettier'],
+  extends: ['productsway'],
    parserOptions: {
    project: './tsconfig.json',
  }
