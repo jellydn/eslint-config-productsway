@@ -1,6 +1,6 @@
-# Welcome to eslint-config-airbnb-prettier 👋
+# Welcome to eslint-config-productsway 👋
 
-[![Version](https://img.shields.io/npm/v/eslint-config-airbnb-prettier.svg)](https://www.npmjs.com/package/eslint-config-airbnb-prettier)
+[![Version](https://img.shields.io/npm/v/eslint-config-productsway.svg)](https://www.npmjs.com/package/eslint-config-productsway)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-yarn add -D eslint-config-airbnb-prettier
+yarn add -D eslint-config-productsway
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Create a .eslintrc.js file in the root of your project's directory
 
 ```sh
 module.exports = {
-  extends: ['airbnb-prettier'],
+  extends: ['airbnb-typescript-prettier'],
 };
 ```
 
@@ -26,7 +26,7 @@ module.exports = {
 
 ```sh
 module.exports = {
-  extends: ['airbnb-prettier'],
+  extends: ['airbnb-typescript-prettier'],
    parserOptions: {
    project: './tsconfig.json',
  }

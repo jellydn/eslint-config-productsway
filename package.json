@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-airbnb-prettier",
+  "name": "eslint-config-productsway",
   "version": "0.1.0",
   "main": "src/index.js",
   "author": "Huynh Duc Dung",
