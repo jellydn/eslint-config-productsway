@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-yarn add -D eslint-config-productsway
+npx install-peerdeps --dev eslint-config-productsway
 ```
 
 ## Usage
