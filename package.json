@@ -21,8 +21,8 @@
     "lint:fix": "eslint --fix"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.9.0",
-    "@typescript-eslint/parser": "5.9.0",
+    "@typescript-eslint/eslint-plugin": "5.12.1",
+    "@typescript-eslint/parser": "5.12.1",
     "eslint": "8.2.0",
     "prettier": "2.5.1",
     "typescript": "4.5.4"
