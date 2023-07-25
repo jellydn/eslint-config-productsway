@@ -26,7 +26,14 @@ If you are working with TypeScript and React, use the following configuration:
 
 ```sh
 module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
   extends: ['productsway/react'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
+  parserOptions: {
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+  },
+  rules: {},
 };
 ```
 
@@ -49,6 +56,12 @@ Open a terminal to the root of your project, and run the following command:
 
 ```sh
 npx eslint . --ext .js,.jsx,.ts,.tsx
+```
+
+For Vite React App, you might want to include .ts and .tsx extensions, and also report unused disable directives with maximum warnings set to 0:
+
+```sh
+"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 ```
 
 ## Author
