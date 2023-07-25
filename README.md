@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> Airbnb's ESLint config with TypeScript and Prettier support
+> XO's ESLint config with TypeScript and Prettier support
 
 ## Install
 
@@ -27,9 +27,9 @@ module.exports = {
 ```sh
 module.exports = {
   extends: ['productsway'],
-   parserOptions: {
-   project: './tsconfig.json',
- }
+  parserOptions: {
+   project: ['./tsconfig.json', './tsconfig.node.json'],
+  }
 };
 ```
 
@@ -52,7 +52,3 @@ npx eslint . --ext .js,.jsx,.ts,.tsx
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
