@@ -14,7 +14,7 @@ npx install-peerdeps --dev eslint-config-productsway
 
 ## Usage
 
-Create a .eslintrc.js file in the root of your project's directory
+Create a .eslintrc.cjs file in the root of your project's directory
 
 ```sh
 module.exports = {
@@ -45,9 +45,9 @@ npx eslint . --ext .js,.jsx,.ts,.tsx
 
 👤 **Huynh Duc Dung**
 
-- Website: https://productsway.com/
-- Twitter: [@jellydn](https://twitter.com/jellydn)
-- Github: [@jellydn](https://github.com/jellydn)
+-   Website: https://productsway.com/
+-   Twitter: [@jellydn](https://twitter.com/jellydn)
+-   Github: [@jellydn](https://github.com/jellydn)
 
 ## Show your support
 
