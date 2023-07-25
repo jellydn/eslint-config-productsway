@@ -11,7 +11,7 @@
     ],
     "license": "MIT",
     "author": "Huynh Duc Dung",
-    "main": "src/index.js",
+    "main": "src/typescript.js",
     "files": [
         "src"
     ],
