@@ -1,3 +1,4 @@
-const eslintrc = require('./.eslintrc');
-
-module.exports = eslintrc;
+module.exports = {
+    typescript: require('./.eslintrc.ts'),
+    react: require('./.eslintrc.react'),
+};

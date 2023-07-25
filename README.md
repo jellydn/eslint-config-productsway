@@ -14,21 +14,31 @@ npx install-peerdeps --dev eslint-config-productsway
 
 ## Usage
 
-Create a .eslintrc.cjs file in the root of your project's directory
+Create a `.eslintrc.cjs` file in the root of your project's directory. If you are working with TypeScript, use the following configuration:
 
 ```sh
 module.exports = {
-  extends: ['productsway'],
+  extends: ['productsway/typescript'],
+};
+```
+
+If you are working with TypeScript and React, use the following configuration:
+
+```sh
+module.exports = {
+  extends: ['productsway/react'],
 };
 ```
 
 ## Configure the ESLint TypeScript parser
 
+If your project has a TypeScript configuration, you need to configure the ESLint TypeScript parser. Include the path to your `tsconfig.json` file(s) in the `parserOptions.project` array, like so:
+
 ```sh
 module.exports = {
-  extends: ['productsway'],
+  extends: ['productsway/typescript'], // or 'productsway/react' for TypeScript and React
   parserOptions: {
-   project: ['./tsconfig.json', './tsconfig.node.json'],
+   project: ['./tsconfig.json', './tsconfig.node.json'], // include all your tsconfig.json files here
   }
 };
 ```
