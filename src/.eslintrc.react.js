@@ -6,7 +6,9 @@ module.exports = {
             jsx: true,
         },
     },
-    rules: {},
+    rules: {
+        'react/react-in-jsx-scope': 'warn',
+    },
     settings: {
         react: {
             version: 'detect',
