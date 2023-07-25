@@ -11,6 +11,11 @@
     ],
     "license": "MIT",
     "author": "Huynh Duc Dung",
+    "exports": {
+        ".": "./src/typescript.js",
+        "./typescript": "./src/typescript.js",
+        "./react": "./src/react.js"
+    },
     "main": "src/typescript.js",
     "files": [
         "src"
