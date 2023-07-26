@@ -72,16 +72,17 @@ In your `.eslintrc.json` file:
 
 ```json
 {
-  "extends": [
-    "productsway/react",
-    "plugin:@next/next/recommended"
-  ]
+    "extends": ["productsway/react", "plugin:@next/next/recommended"]
 }
 ```
 
 This will apply both the rules from eslint-config-productsway for React and the recommended ESLint configuration for Next.js.
 Please note that you'll need to install the necessary dependencies for Next.js ESLint configuration: `eslint-config-next`.
 
+## Roadmap
+
+-   [ ] Integrate [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist) for enhanced sorting (objects, imports, types, enums, JSX props, etc).
+-   [ ] Expand support to Vue.js with [eslint-config-xo-vue](https://github.com/ChocPanda/eslint-config-xo-vue#use-with-xo).
 
 ## Author
 
