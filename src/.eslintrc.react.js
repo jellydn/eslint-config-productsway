@@ -1,3 +1,11 @@
+const baseRules = {
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
+    '@typescript-eslint/naming-convention': 'warn',
+};
+
 module.exports = {
     extends: ['xo', 'xo-typescript', 'xo-react', 'prettier'],
     parserOptions: {
@@ -7,6 +15,7 @@ module.exports = {
         },
     },
     rules: {
+        ...baseRules,
         'react/react-in-jsx-scope': 'off',
     },
     settings: {
