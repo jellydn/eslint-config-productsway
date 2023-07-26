@@ -64,6 +64,25 @@ For Vite React App, you might want to include .ts and .tsx extensions, and also 
 "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 ```
 
+## Usage with Next.js
+
+If you're using `Next.js` in your project and want to integrate it with `eslint-config-productsway`, you can use the following configuration:
+
+In your `.eslintrc.json` file:
+
+```json
+{
+  "extends": [
+    "productsway/react",
+    "plugin:@next/next/recommended"
+  ]
+}
+```
+
+This will apply both the rules from eslint-config-productsway for React and the recommended ESLint configuration for Next.js.
+Please note that you'll need to install the necessary dependencies for Next.js ESLint configuration: `eslint-config-next`.
+
+
 ## Author
 
 👤 **Huynh Duc Dung**
