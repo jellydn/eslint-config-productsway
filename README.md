@@ -84,6 +84,28 @@ Please note that you'll need to install the necessary dependencies for Next.js E
 -   [ ] Integrate [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist) for enhanced sorting (objects, imports, types, enums, JSX props, etc).
 -   [ ] Expand support to Vue.js with [eslint-config-xo-vue](https://github.com/ChocPanda/eslint-config-xo-vue#use-with-xo).
 
+Sure, here's how it can be integrated into your README:
+
+## Tips
+
+### Sorting Imports with Prettier Plugin
+
+To maintain consistent ordering of imports in your project, you can use the [trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports#usage) plugin. 
+
+In your `.prettierrc.js` file:
+
+```js
+module.exports = {
+  ...
+  "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true.
+ 
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+}
+```
+
+
 ## Author
 
 👤 **Huynh Duc Dung**
