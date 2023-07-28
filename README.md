@@ -1,12 +1,12 @@
-# Welcome to eslint-config-productsway 👋
+# eslint-config-productsway 👋
 
 [![Version](https://img.shields.io/npm/v/eslint-config-productsway.svg)](https://www.npmjs.com/package/eslint-config-productsway)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> XO's ESLint config with TypeScript and Prettier support
+> Enhance your code quality with XO's ESLint config, further augmented with TypeScript and Prettier support.
 
-## Install
+## Installation
 
 ```sh
 npx install-peerdeps --dev eslint-config-productsway
@@ -14,17 +14,17 @@ npx install-peerdeps --dev eslint-config-productsway
 
 ## Usage
 
-Create a `.eslintrc.cjs` file in the root of your project's directory. If you are working with TypeScript, use the following configuration:
+Create a `.eslintrc.cjs` file at the root of your project's directory.
 
-```sh
+For TypeScript projects:
+```js
 module.exports = {
   extends: ['productsway/typescript'],
 };
 ```
 
-If you are working with TypeScript and React, use the following configuration:
-
-```sh
+For TypeScript and React projects:
+```js
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -37,11 +37,11 @@ module.exports = {
 };
 ```
 
-## Configure the ESLint TypeScript parser
+## Configuring the ESLint TypeScript Parser
 
-If your project has a TypeScript configuration, you need to configure the ESLint TypeScript parser. Include the path to your `tsconfig.json` file(s) in the `parserOptions.project` array, like so:
+If your project uses TypeScript, ensure to configure the ESLint TypeScript parser by specifying your `tsconfig.json` files in the `parserOptions.project` array:
 
-```sh
+```js
 module.exports = {
   extends: ['productsway/typescript'], // or 'productsway/react' for TypeScript and React
   parserOptions: {
@@ -50,25 +50,23 @@ module.exports = {
 };
 ```
 
-## Run ESLint
+## Executing ESLint
 
-Open a terminal to the root of your project, and run the following command:
+From your project's root directory, execute:
 
 ```sh
 npx eslint . --ext .js,.jsx,.ts,.tsx
 ```
 
-For Vite React App, you might want to include .ts and .tsx extensions, and also report unused disable directives with maximum warnings set to 0:
+For Vite React App, include .ts and .tsx extensions and report unused disable directives:
 
 ```sh
 "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 ```
 
-## Usage with Next.js
+## Integration with Next.js
 
-If you're using `Next.js` in your project and want to integrate it with `eslint-config-productsway`, you can use the following configuration:
-
-In your `.eslintrc.json` file:
+For Next.js projects, you can use the following configuration in your `.eslintrc.json` file:
 
 ```json
 {
@@ -76,21 +74,18 @@ In your `.eslintrc.json` file:
 }
 ```
 
-This will apply both the rules from eslint-config-productsway for React and the recommended ESLint configuration for Next.js.
-Please note that you'll need to install the necessary dependencies for Next.js ESLint configuration: `eslint-config-next`.
+Please note: You need to install `eslint-config-next` to use the recommended ESLint configuration for Next.js.
 
 ## Roadmap
 
--   [ ] Integrate [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist) for enhanced sorting (objects, imports, types, enums, JSX props, etc).
--   [ ] Expand support to Vue.js with [eslint-config-xo-vue](https://github.com/ChocPanda/eslint-config-xo-vue#use-with-xo).
-
-Sure, here's how it can be integrated into your README:
+-   [ ] Add [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist) for sorting various entities (imports, types, enums, JSX props, etc.)
+-   [ ] Extend support to Vue.js with [eslint-config-xo-vue](https://github.com/ChocPanda/eslint-config-xo-vue#use-with-xo).
 
 ## Tips
 
 ### Sorting Imports with Prettier Plugin
 
-To maintain consistent ordering of imports in your project, you can use the [trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports#usage) plugin. 
+For consistent import ordering, utilize the [trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports#usage) plugin.
 
 In your `.prettierrc.js` file:
 
@@ -99,12 +94,10 @@ module.exports = {
   ...
   "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true.
- 
+  "importOrderSortSpecifiers": true,
   "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
 ```
-
 
 ## Author
 
@@ -114,6 +107,6 @@ module.exports = {
 -   Twitter: [@jellydn](https://twitter.com/jellydn)
 -   Github: [@jellydn](https://github.com/jellydn)
 
-## Show your support
+## Show Your Support
 
-Give a ⭐️ if this project helped you!
+If this project assists you, give it a ⭐️!
