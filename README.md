@@ -6,6 +6,8 @@
 
 > Enhance your code quality with XO's ESLint config, further augmented with TypeScript and Prettier support.
 
+[![IT Man - A Guide to Professional JavaScript &amp; TypeScript Development [Vietnamese]](https://i.ytimg.com/vi/FTG0rTnhjV8/hqdefault.jpg)](https://www.youtube.com/watch?v=FTG0rTnhjV8)
+
 ## Installation
 
 ```sh
