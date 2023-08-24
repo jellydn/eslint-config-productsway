@@ -7,7 +7,13 @@ const baseRules = {
 };
 
 module.exports = {
-    extends: ['xo', 'xo-typescript', 'xo-react', 'prettier'],
+    extends: [
+        'xo',
+        'xo-typescript',
+        'xo-react',
+        'eslint-plugin-tsdoc',
+        'prettier',
+    ],
     parserOptions: {
         project: './tsconfig.json',
         ecmaFeatures: {
@@ -16,6 +22,7 @@ module.exports = {
     },
     rules: {
         ...baseRules,
+        'tsdoc/syntax': 'warn',
         'react/react-in-jsx-scope': 'off',
     },
     settings: {

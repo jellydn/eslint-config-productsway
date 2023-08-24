@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['xo', 'xo-typescript', 'prettier'],
+    extends: ['xo', 'xo-typescript', 'eslint-plugin-tsdoc', 'prettier'],
     parserOptions: {
         project: './tsconfig.json',
     },
@@ -8,5 +8,6 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/no-unsafe-member-access': 'warn',
         '@typescript-eslint/no-unsafe-return': 'warn',
+        'tsdoc/syntax': 'warn',
     },
 };
