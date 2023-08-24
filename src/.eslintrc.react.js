@@ -7,13 +7,8 @@ const baseRules = {
 };
 
 module.exports = {
-    extends: [
-        'xo',
-        'xo-typescript',
-        'xo-react',
-        'eslint-plugin-tsdoc',
-        'prettier',
-    ],
+    extends: ['xo', 'xo-typescript', 'xo-react', 'prettier'],
+    plugins: ['@typescript-eslint/eslint-plugin', 'eslint-plugin-tsdoc'],
     parserOptions: {
         project: './tsconfig.json',
         ecmaFeatures: {

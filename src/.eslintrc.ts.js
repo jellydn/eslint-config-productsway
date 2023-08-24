@@ -1,5 +1,6 @@
 module.exports = {
-    extends: ['xo', 'xo-typescript', 'eslint-plugin-tsdoc', 'prettier'],
+    extends: ['xo', 'xo-typescript', 'prettier'],
+    plugins: ['@typescript-eslint/eslint-plugin', 'eslint-plugin-tsdoc'],
     parserOptions: {
         project: './tsconfig.json',
     },
