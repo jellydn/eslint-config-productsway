@@ -6,7 +6,7 @@
 
 > Enhance your code quality with XO's ESLint config, further augmented with TypeScript and Prettier support.
 
-[![IT Man - A Guide to Professional JavaScript &amp; TypeScript Development [Vietnamese]](https://i.ytimg.com/vi/FTG0rTnhjV8/hqdefault.jpg)](https://www.youtube.com/watch?v=FTG0rTnhjV8)
+[![IT Man - A Guide to Professional JavaScript & TypeScript Development [Vietnamese]](https://i.ytimg.com/vi/FTG0rTnhjV8/hqdefault.jpg)](https://www.youtube.com/watch?v=FTG0rTnhjV8)
 
 ## Installation
 
@@ -19,23 +19,25 @@ npx install-peerdeps --dev eslint-config-productsway
 Create a `.eslintrc.cjs` file at the root of your project's directory.
 
 For TypeScript projects:
+
 ```js
 module.exports = {
-  extends: ['productsway/typescript'],
+    extends: ['productsway/typescript'],
 };
 ```
 
 For TypeScript and React projects:
+
 ```js
 module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: ['productsway/react'],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
-  parserOptions: {
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-  },
-  rules: {},
+    root: true,
+    env: { browser: true, es2020: true },
+    extends: ['productsway/react'],
+    ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
+    parserOptions: {
+        project: ['./tsconfig.json', './tsconfig.node.json'],
+    },
+    rules: {},
 };
 ```
 
@@ -45,10 +47,10 @@ If your project uses TypeScript, ensure to configure the ESLint TypeScript parse
 
 ```js
 module.exports = {
-  extends: ['productsway/typescript'], // or 'productsway/react' for TypeScript and React
-  parserOptions: {
-   project: ['./tsconfig.json', './tsconfig.node.json'], // include all your tsconfig.json files here
-  }
+    extends: ['productsway/typescript'], // or 'productsway/react' for TypeScript and React
+    parserOptions: {
+        project: ['./tsconfig.json', './tsconfig.node.json'], // include all your tsconfig.json files here
+    },
 };
 ```
 
@@ -100,6 +102,12 @@ module.exports = {
   "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
 ```
+
+## Resources
+
+-   [xojs/xo: ❤️ JavaScript/TypeScript linter (ESLint wrapper) with great defaults](https://github.com/xojs/xo#configs)
+-   [prettier/eslint-config-prettier: Turns off all rules that are unnecessary or might conflict with Prettier.](https://github.com/prettier/eslint-config-prettier)
+-   [tsdoc/eslint-plugin](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
 
 ## Author
 
