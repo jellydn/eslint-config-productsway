@@ -1074,7 +1074,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:6.21.0"
     eslint: "npm:8.56.0"
     eslint-config-prettier: "npm:9.1.0"
-    eslint-config-xo: "npm:0.43.1"
+    eslint-config-xo: "npm:0.44.0"
     eslint-config-xo-react: "npm:0.27.0"
     eslint-config-xo-typescript: "npm:1.0.1"
     eslint-plugin-import: "npm:2.29.1"
@@ -1115,14 +1115,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo@npm:0.43.1":
-  version: 0.43.1
-  resolution: "eslint-config-xo@npm:0.43.1"
+"eslint-config-xo@npm:0.44.0":
+  version: 0.44.0
+  resolution: "eslint-config-xo@npm:0.44.0"
   dependencies:
     confusing-browser-globals: "npm:1.0.11"
   peerDependencies:
-    eslint: ">=8.27.0"
-  checksum: 10c0/753026f1eae1648d79921cc51d78d55182966d178093f14e08e09f191ccffabd0292a31c7dc70e65c6c655ac1cdcfa05d7f99e8af4f4164e04834f1bea96dbe0
+    eslint: ">=8.56.0"
+  checksum: 10c0/ca051b569f66ffe0d10e93b0a935b2082aa978eccf6691b40a1ced341150eac7eb9bb913cb370bddbd352c6e20cad7854bd3a33a52356e9effeac54d914deac2
   languageName: node
   linkType: hard
 
