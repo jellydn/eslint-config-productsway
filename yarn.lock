@@ -1138,7 +1138,7 @@ __metadata:
     eslint-config-prettier: "npm:9.1.0"
     eslint-config-xo: "npm:0.44.0"
     eslint-config-xo-react: "npm:0.27.0"
-    eslint-config-xo-typescript: "npm:1.0.1"
+    eslint-config-xo-typescript: "npm:4.0.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-jsx-a11y: "npm:6.8.0"
     eslint-plugin-react: "npm:7.34.0"
@@ -1165,15 +1165,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-typescript@npm:1.0.1":
-  version: 1.0.1
-  resolution: "eslint-config-xo-typescript@npm:1.0.1"
+"eslint-config-xo-typescript@npm:4.0.0":
+  version: 4.0.0
+  resolution: "eslint-config-xo-typescript@npm:4.0.0"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">=6.0.0"
-    "@typescript-eslint/parser": ">=6.0.0"
-    eslint: ">=8.0.0"
-    typescript: ">=4.7"
-  checksum: 10c0/d8794d9a64d9849c27c22201e2badaa781a0241d371991759a581d06859659f9a849287739a54a9f0a514ffaf7bd4d538f82ea9c67b5ef704b5ee0353cdfc01e
+    "@typescript-eslint/eslint-plugin": ">=7.0.2"
+    "@typescript-eslint/parser": ">=7.0.2"
+    eslint: ">=8.56.0"
+    typescript: ">=5.0.0"
+  checksum: 10c0/079be08df5e136522298d18d14fa533daaebfc53a0631989459d967962de326fc31336fd738e4d49a41a4b12f34766a543f1eb827f8782b7668e03b57cb20dd4
   languageName: node
   linkType: hard
 
