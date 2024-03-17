@@ -1,8 +1,8 @@
 name: Publish Node.js Package
 
 on:
-#   release:
-#     types: [created]
+  release:
+    types: [created]
   workflow_dispatch: # Allows manual triggering from GitHub Actions UI
 
 jobs:
@@ -12,8 +12,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
-      - run: yarn install # Using Yarn to install dependencies
+          node-version: 18
+      - name: Install dependencies
+        run: |
+          corepack enable
+          yarn install # Using Yarn to install dependencies
 
   publish-npm:
     needs: build
@@ -22,8 +25,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: |
+          corepack enable
+          yarn install # Using Yarn to install dependencies
       - run: yarn publish # Using Yarn to publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
