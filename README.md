@@ -108,6 +108,7 @@ module.exports = {
 -   [xojs/xo: ❤️ JavaScript/TypeScript linter (ESLint wrapper) with great defaults](https://github.com/xojs/xo#configs)
 -   [prettier/eslint-config-prettier: Turns off all rules that are unnecessary or might conflict with Prettier.](https://github.com/prettier/eslint-config-prettier)
 -   [tsdoc/eslint-plugin](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
+-   [ESLint's new config system, Part 2: Introduction to flat config - ESLint - Pluggable JavaScript Linter](https://eslint.org/blog/2022/08/new-config-system-part-2/)
 
 ## Author
 
