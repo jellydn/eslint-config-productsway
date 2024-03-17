@@ -21,7 +21,6 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: eslint-config-productsway
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v4
         with:
