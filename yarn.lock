@@ -1739,7 +1739,7 @@ __metadata:
     eslint-plugin-react: "npm:7.34.1"
     eslint-plugin-react-hooks: "npm:4.6.0"
     eslint-plugin-tsdoc: "npm:0.2.17"
-    np: "npm:10.0.3"
+    np: "npm:10.0.4"
     prettier: "npm:3.2.5"
     typescript: "npm:5.4.5"
   peerDependencies:
@@ -3697,9 +3697,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"np@npm:10.0.3":
-  version: 10.0.3
-  resolution: "np@npm:10.0.3"
+"np@npm:10.0.4":
+  version: 10.0.4
+  resolution: "np@npm:10.0.4"
   dependencies:
     chalk: "npm:^5.3.0"
     chalk-template: "npm:^1.1.0"
@@ -3739,7 +3739,7 @@ __metadata:
     update-notifier: "npm:^7.0.0"
   bin:
     np: source/cli.js
-  checksum: 10c0/111a5d9e9bb256441310f022da2fc78f17925ab5aaa82b82c42759321a546e944cf6e8a47b0b4b36624e7f588f171078157c5f9a756c4dd75d066d594ff4cb85
+  checksum: 10c0/b5d02fd0f0a50b98a2ede325d551dafb9894e7b19310f71034c5a6a36a8f37750412132682dfeef05f3124c5aa6d79a37c327946ca47b5d1a79c6423b4cd0f07
   languageName: node
   linkType: hard
 
