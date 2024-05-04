@@ -39,7 +39,7 @@
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
-    "eslint": "8.57.0",
+    "eslint": "9.2.0",
     "np": "10.0.5",
     "prettier": "3.2.5",
     "typescript": "5.4.5"
@@ -47,7 +47,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "eslint": "^8",
+    "eslint": "^8 || ^9.0.0",
     "prettier": "^3"
   },
   "packageManager": "yarn@4.2.1",
