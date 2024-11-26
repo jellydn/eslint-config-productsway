@@ -41,7 +41,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
     "np": "10.1.0",
-    "prettier": "3.3.3",
+    "prettier": "3.4.0",
     "typescript": "5.7.2"
   },
   "peerDependencies": {
