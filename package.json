@@ -28,7 +28,7 @@
     "eslint-config-prettier": "9.1.2",
     "eslint-config-xo": "0.49.0",
     "eslint-config-xo-react": "0.29.0",
-    "eslint-config-xo-typescript": "6.0.0",
+    "eslint-config-xo-typescript": "9.0.0",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
